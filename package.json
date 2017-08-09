@@ -1,6 +1,6 @@
 {
   "name": "glamor-shadow-dom",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "glamor and Shadow DOM together in React with all the benefits of style encapsulation.",
   "main": "lib/index.js",
   "scripts": {
