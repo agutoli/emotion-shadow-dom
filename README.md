@@ -8,6 +8,7 @@ glamor-shadow-dom
 ## Example with glamor
 
     import React from 'react';
+    import ShadowDOM from 'glamor-shadow-dom';
     import { css } from 'glamor'
 
     let box = css({ color: 'red' })
