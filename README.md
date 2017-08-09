@@ -5,6 +5,18 @@ glamor-shadow-dom
 
 `npm install glamor-shadow-dom --save`
 
+## Benefits
+
+* **Encapsulation**: You component will be protected by external css styles.
+
+* **Isolated DOM**: The DOM of a component is independent (for example, document.querySelector() does not return nodes of your ShadowDOM area).
+
+* **Scope CSS**: The CSS defined within the DOM shadow assumes its scope. Style rules do not leak and page styles do not interfere.
+
+* **Simplify CSS**: The scoped DOM means that you can use CSS selectors, more generic class / ID names, and not worry about naming conflicts (but use BEMCSS plz... hehe).
+
+* **Performance**: If you have  component with shadowDOM, when this component suffer any change, browser will "rapaint" just that area.
+
 ## Example with glamor
 
     import React from 'react';
