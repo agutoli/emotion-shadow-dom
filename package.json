@@ -1,0 +1,34 @@
+{
+  "name": "glamor-shadow-dom",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "./tools/build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/agutoli/glamor-shadow-dom.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/agutoli/glamor-shadow-dom/issues"
+  },
+  "homepage": "https://github.com/agutoli/glamor-shadow-dom#readme",
+  "peerDependencies": {
+    "react": "~0.14.8 || ^15.6.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-plugin-transform-es2015-modules-umd": "^6.24.1",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "react": "^15.6.1",
+    "react-shadow": "^2.0.2"
+  },
+  "dependencies": {
+    "react-shadow": "^2.0.2"
+  }
+}
