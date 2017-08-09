@@ -1,6 +1,6 @@
 {
   "name": "glamor-shadow-dom",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "glamor and Shadow DOM together in React with all the benefits of style encapsulation.",
   "main": "lib/index.js",
   "scripts": {
@@ -17,7 +17,8 @@
   },
   "homepage": "https://github.com/agutoli/glamor-shadow-dom#readme",
   "peerDependencies": {
-    "react": "~0.14.8 || ^15.6.1"
+    "react": "~0.14.8 || ^15.6.1",
+    "react-dom": "~0.14.8 || ^15.6.1"
   },
   "devDependencies": {
     "babel-cli": "^6.24.1",
@@ -26,6 +27,7 @@
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-0": "^6.24.1",
     "react": "^15.6.1",
+    "react-dom": "^15.6.1",
     "react-shadow": "^2.0.2"
   },
   "dependencies": {

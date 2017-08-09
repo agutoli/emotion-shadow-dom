@@ -30,10 +30,7 @@ export default (element) => {
     }
   }
 
-
   return class ShadowDOMHelper extends React.PureComponent {
-
-
     injectStyle = (prefixId) => {
       const cssStyleSheet = Array.from(document.querySelectorAll('[data-glamor]')).slice(-1)[0];
       if (cssStyleSheet) {
