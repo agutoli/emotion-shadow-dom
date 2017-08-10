@@ -7,7 +7,7 @@ glamor-shadow-dom
 
 ## Benefits
 
-* **Encapsulation**: You component will be protected by external css styles.
+* **Encapsulation**: Your component will be protected by external css styles.
 
 * **Isolated DOM**: The DOM of a component is independent (for example, document.querySelector() does not return nodes of your ShadowDOM area).
 
