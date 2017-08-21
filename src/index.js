@@ -3,20 +3,12 @@ import ReactDOM from 'react-dom';
 import ShadowDOM from 'react-shadow'
 
 export default (element) => {
-  class GlamorShadowDOMWrapper extends React.Component {
+  class EmotionShadowDOMWrapper extends React.Component {
     render() {
-      return React.createElement(element, {...this.props, ref: this.glamorousInject});
+      return React.createElement(element, {...this.props, ref: this.emotionInject});
     }
 
-    glamorInject = () => {
-      const { injectStyle } = this.props;
-      const node = ReactDOM.findDOMNode(this);
-      const attributes = Array.prototype.slice.call(node.attributes);
-      const prefixId = attributes.find((a) => /^data-css-/.test(a.nodeName))
-      prefixId && injectStyle(prefixId.nodeName);
-    }
-
-    glamorousInject = (node) => {
+    emotionInject = (node) => {
       const { injectStyle } = this.props;
       const didUpdate = element.prototype.componentDidUpdate || function() {};
       element.prototype.componentDidUpdate = () => {
@@ -24,15 +16,11 @@ export default (element) => {
         didUpdate();
       };
     }
-
-    componentDidMount() {
-      this.glamorInject();
-    }
   }
 
   return class ShadowDOMHelper extends React.PureComponent {
     injectStyle = (prefixId) => {
-      const cssStyleSheet = Array.from(document.querySelectorAll('[data-glamor]')).slice(-1)[0];
+      const cssStyleSheet = Array.from(document.querySelectorAll('[data-emotion]')).slice(-1)[0];
       if (cssStyleSheet) {
         Array.from(cssStyleSheet.sheet.cssRules).forEach((cssRule) => {
           if ((new RegExp(prefixId)).test(cssRule.selectorText)) {
@@ -52,7 +40,7 @@ export default (element) => {
         <ShadowDOM>
           <span>
             <style ref={(n) => this.styleTag = n} />
-            <GlamorShadowDOMWrapper {...this.props} injectStyle={this.injectStyle} />
+            <EmotionShadowDOMWrapper {...this.props} injectStyle={this.injectStyle} />
           </span>
         </ShadowDOM>
       )

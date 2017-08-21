@@ -1,21 +1,21 @@
 {
-  "name": "glamor-shadow-dom",
+  "name": "emotion-shadow-dom",
   "version": "0.0.3",
-  "description": "glamor and Shadow DOM together in React with all the benefits of style encapsulation.",
+  "description": "Emotion and Shadow DOM together in React with all the benefits of style encapsulation.",
   "main": "lib/index.js",
   "scripts": {
     "build": "./tools/build"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/agutoli/glamor-shadow-dom.git"
+    "url": "git+https://github.com/agutoli/emotion-shadow-dom.git"
   },
   "author": "Bruno Agutoli <bruno.agutoli@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/agutoli/glamor-shadow-dom/issues"
+    "url": "https://github.com/agutoli/emotion-shadow-dom/issues"
   },
-  "homepage": "https://github.com/agutoli/glamor-shadow-dom#readme",
+  "homepage": "https://github.com/agutoli/emotion-shadow-dom#readme",
   "peerDependencies": {
     "react": "~0.14.8 || ^15.6.1",
     "react-dom": "~0.14.8 || ^15.6.1"

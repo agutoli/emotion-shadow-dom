@@ -1,9 +1,9 @@
-glamor-shadow-dom
+emotion-shadow-dom
 =====================
 
 ## Installation
 
-`npm install glamor-shadow-dom --save`
+`npm install emotion-shadow-dom --save`
 
 ## Benefits
 
@@ -17,26 +17,12 @@ glamor-shadow-dom
 
 * **Performance**: If you have  component with shadowDOM, when this component suffer any change, browser will "rapaint" just that area.
 
-## Example with glamor
-
+## Example with emotion
     import React from 'react';
-    import ShadowDOM from 'glamor-shadow-dom';
-    import { css } from 'glamor'
+    import styled from 'emotion/react'
+    import ShadowDOM from 'emotion-shadow-dom';
 
-    let box = css({ color: 'red' })
-
-    export default ShadowDOM(() => (
-      <div {...box}>
-        this is a nice box.
-      </div>
-    ));
-
-## Example with glamorous
-    import React from 'react';
-    import glamorous from 'glamorous';
-    import ShadowDOM from 'glamor-shadow-dom';
-
-    export default ShadowDOM(glamorous.button({
+    export default ShadowDOM(styled.button({
       fontSize: 16,
       margin: 10,
       border: 'none',
