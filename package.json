@@ -1,6 +1,6 @@
 {
   "name": "emotion-shadow-dom",
-  "version": "0.0.4",
+  "version": "0.0.6",
   "description": "Emotion and Shadow DOM together in React with all the benefits of style encapsulation.",
   "main": "lib/index.js",
   "scripts": {
